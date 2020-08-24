@@ -13,7 +13,7 @@ Automatically create a *setup.py* for you to
    - upload them to Python package index,
 
        > # register PyPI at https://pypi.org/ and
-       > # create an .pypirc under $HOME
+       > # create a .pypirc under $HOME
 
        > pip install twine
        > python setup.py bdist_wheel
