@@ -19,7 +19,7 @@ def mk_setup(PACK, DIR, EXE):
 def mk_main(EXE_PATH):
     main_template = Path(__file__).parent / "main_template.py"
     contents = main_template.open().read()
-    return Template(contents).safe_substitute(EXE_PATH=EXE_PATH)
+    return Template(contents).safe_substitute(EXE_PATH=repr(EXE_PATH))
 
 
 def main():
