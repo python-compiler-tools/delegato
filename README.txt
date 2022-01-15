@@ -1,3 +1,5 @@
+IMPORTANT: ALWAYS USE UNIX PATH!
+
 Delegato
 ========================
 
