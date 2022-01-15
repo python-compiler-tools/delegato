@@ -40,7 +40,7 @@ def main():
         """
         assert exe, "executable name/path mustn't be empty!"
         packname = "dexe_" + packname
-        cmdname = cmdname or Path(exe).name
+        cmdname = cmdname or Path(exe).with_suffix("").name
 
         Path(packname).mkdir(mode=0o777, parents=True, exist_ok=True)
 
